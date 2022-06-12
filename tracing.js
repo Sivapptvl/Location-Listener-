@@ -1,10 +1,17 @@
 function startListening() {
+    const targetPosition = coords.value.split(",");
+
     function onSuccess(position){
       /* Updates distance away from target */
       const currLat = position.coords.latitude;
       const currLng = position.coords.longitude;
 
+      const targetLat = targetPosition[0];
+      const targetLng = targetPosition[1];
+
       const dist = getDistance(currLat, targetLat, currLng, targetLng);
+
+      document.getElementById("distance-away").innerHTML = dist + " km away";
 
       if(dist <= radius.value){
         navigator.geolocation.clearWatch(listener);
@@ -16,12 +23,12 @@ function startListening() {
       /* Alerts error on error */
       alert(error.message);
     }
-    alert("to listen ");
+    
     navigator.geolocation.watchPosition(onSuccess, onFail);
 }
 
 function getDistance(currLat, targetLat, currLng, targetLng){
-    currLat = currLat * Math.PI / 180;
+  	currLat = currLat * Math.PI / 180;
     targetLat = targetLat * Math.PI / 180;
     currLng = currLng * Math.PI / 180;
     targetLng = targetLng * Math.PI / 180;
@@ -42,7 +49,7 @@ function Alert() {
     if(vibrate){
         navigator.vibrate(1500);
     }
-    var audio = new Audio("https://drive.google.com/uc?export=view&id=10VtHh64HYZGVOrwR_KXTqnWCF2fOE2tE");
+    var audio = new Audio(audio.value);
     audio.play();
 }
 
