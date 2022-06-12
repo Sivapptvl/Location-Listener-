@@ -37,7 +37,7 @@ vibration.addEventListener('pointerdown', ()=>{
         vibration.style.color = "#26ff00";
         vibration.textContent = "ON";
     }
-    alert(vibrate);
+    alert(666);
 });
 
 
