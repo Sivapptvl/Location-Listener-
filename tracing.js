@@ -4,9 +4,6 @@ function startListening() {
       const currLat = position.coords.latitude;
       const currLng = position.coords.longitude;
 
-      const targetLat = targetPosition[0];
-      const targetLng = targetPosition[1];
-
       const dist = getDistance(currLat, targetLat, currLng, targetLng);
 
       document.getElementById("distance-away").innerHTML = dist + " km away";
