@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Location Listener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<form>
+    <fieldset id="window">
+        <legend>Location Listener</legend>
+        Coordinates : <input type="text" name="coords" id="coords"/>
+        <br>
+        
+        Radius : <input type="range" name="radius" id="radius"/>
+        <label id="radiusLabel">1 km</label>
+        <br>
+        
+        Vibration : <span id="toggle"><b>OFF</b></span>
+        <br>
+        
+        Alert Tone : <input type="url" name="audio" id="audio"/>
+        <br>
+        
+        <input type="submit" name="submit" id="submit" value="Trace location"/>
+    </fieldset>
+</form>
+
+<script src="script.js"></script>
+<script src="tracing.js"></script>
+
+</body>
+</html>
