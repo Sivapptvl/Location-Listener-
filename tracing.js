@@ -51,4 +51,4 @@ function Alert() {
     audio.play();
 }
 
-submit.addEventListener("click", startListening);
+submit.onsubmit = "startListening()";
