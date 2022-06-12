@@ -6,8 +6,6 @@ function startListening() {
 
       const dist = getDistance(currLat, targetLat, currLng, targetLng);
 
-      document.getElementById("distance-away").innerHTML = dist + " km away";
-
       if(dist <= radius.value){
         navigator.geolocation.clearWatch(listener);
           Alert();
@@ -23,7 +21,7 @@ function startListening() {
 }
 
 function getDistance(currLat, targetLat, currLng, targetLng){
-  	currLat = currLat * Math.PI / 180;
+    currLat = currLat * Math.PI / 180;
     targetLat = targetLat * Math.PI / 180;
     currLng = currLng * Math.PI / 180;
     targetLng = targetLng * Math.PI / 180;
@@ -44,7 +42,7 @@ function Alert() {
     if(vibrate){
         navigator.vibrate(1500);
     }
-    var audio = new Audio(audio.value);
+    var audio = new Audio("https://drive.google.com/uc?export=view&id=10VtHh64HYZGVOrwR_KXTqnWCF2fOE2tE");
     audio.play();
 }
 
