@@ -30,4 +30,4 @@ function startListening() {
     navigator.geolocation.watchPosition(onSuccess,  onFail);
 }
 
-submit.onsubmit = startListening;
+submit.setAttribute("onsubmit", "startListening()");
