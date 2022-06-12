@@ -18,7 +18,6 @@ function getDistance(currLat, targetLat, currLng, targetLng){
   
   
 function startListening() {
-    navigator.geolocation.watchPosition(onSuccess,  onFail);
     
     function onSuccess() {
         alert("Success");
@@ -27,6 +26,8 @@ function startListening() {
     function onFail() {
         alert("fail");
     }
+
+    navigator.geolocation.watchPosition(onSuccess,  onFail);
 }
 
 submit.onsubmit = startListening;
