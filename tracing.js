@@ -29,8 +29,4 @@ function startListening() {
 
     navigator.geolocation.watchPosition(onSuccess,  onFail);
 }
-
-alert(range.value);
-alert(coords.value);
-
-submit.setAttribute("onsubmit", "startListening()");
+alert(666);
