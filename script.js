@@ -40,7 +40,3 @@ vibration.addEventListener('pointerdown', ()=>{
 
 audio.value = "";
 audio.placeholder = "Paste link";
-
-submit.addEventListener("click", ()=>{
-    document.getElementById("window").innerHTML = "<center id=\"distance-away\">Your Location has been set up</center>";
-});
