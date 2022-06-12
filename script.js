@@ -5,10 +5,10 @@ var ball = document.getElementById("ball");
 var audio = document.getElementById("audio");
 var submit = document.getElementById("submit");
 
-coords.placeholder = "Paste      <LATITUDE>,<LONGITUDE>      here"
-const targetLat = coords.value.split(",")[0];
-const targetLng = coords.value.split(",")[1];
-alert(coords. value);
+
+
+coords.placeholder = "Paste      <LATITUDE>,<LONGITUDE>      here";
+
 
 
 radius.min = 200;
@@ -23,6 +23,8 @@ radius.addEventListener("touchmove", ()=>{
     document.getElementById("radiusLabel").textContent  = radius.value/1000 + " km";
 });
 
+
+
 vibration.textContent = "OFF";
 var vibrate = false;
 
@@ -35,8 +37,11 @@ vibration.addEventListener('pointerdown', ()=>{
     else{
         vibrate = true;
         vibration.style.color = "#26ff00";
-        vibration.textContent = "ON";
-    }alert(vibrate.value);
+        vibration.textContent = "ON";return
+    }
 });
 
+
+
+audio.value = "";
 audio.placeholder = "Paste link";
