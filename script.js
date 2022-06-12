@@ -37,10 +37,8 @@ vibration.addEventListener('pointerdown', ()=>{
         vibration.style.color = "#26ff00";
         vibration.textContent = "ON";
     }
-    alert(666);
 });
 
 
-// audio link
-audio.value = "";
+
 audio.placeholder = "Paste link";
