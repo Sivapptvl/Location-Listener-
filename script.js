@@ -8,7 +8,7 @@ var submit = document.getElementById("submit");
 coords.placeholder = "Paste      <LATITUDE>,<LONGITUDE>      here"
 const targetLat = coords.value.split(",")[0];
 const targetLng = coords.value.split(",")[1];
-alert(targetLat+targetLng);
+alert(coords. value);
 
 
 radius.min = 200;
