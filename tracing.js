@@ -16,7 +16,7 @@ function startListening() {
       /* Alerts error on error */
       alert(error.message);
     }
-    
+    alert("to listen ");
     navigator.geolocation.watchPosition(onSuccess, onFail);
 }
 
