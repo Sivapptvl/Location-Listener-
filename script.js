@@ -8,6 +8,7 @@ var submit = document.getElementById("submit");
 coords.placeholder = "Paste      <LATITUDE>,<LONGITUDE>      here"
 const targetLat = coords.value.split(",")[0];
 const targetLng = coords.value.split(",")[1];
+alert(targetLat+targetLng);
 
 
 radius.min = 200;
@@ -26,17 +27,16 @@ vibration.textContent = "OFF";
 var vibrate = false;
 
 vibration.addEventListener('pointerdown', ()=>{
-    if(!vibrate){
-        vibrate = true;
-        vibration.style.color = "#26ff00";
-        vibration.textContent = "ON";
-    }
-    else{
+    if(vibrate){
         vibrate = false;
         vibration.style.color = "#ff0a00";
         vibration.textContent = "OFF";
     }
+    else{
+        vibrate = true;
+        vibration.style.color = "#26ff00";
+        vibration.textContent = "ON";
+    }alert(vibrate.value);
 });
 
-audio.value = "";
 audio.placeholder = "Paste link";
