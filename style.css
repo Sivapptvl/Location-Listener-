@@ -1,0 +1,49 @@
+fieldset{
+    border: 2px solid red;
+    border-radius: 20px;
+    
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 25px;
+        
+    padding: 50px;
+}
+
+#coordinates{
+    
+}    
+
+#radius{
+    
+}
+
+#toggle{ 
+    width: 50px;
+    height: 25px;
+    
+    border: 1px solid red;    
+    border-radius: 25px;    
+    background-color: #a2a295;
+    
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#audio{
+    font-style: italic;
+}
+
+#submit{
+    width: 50%;
+    height: auto;
+
+    font-style: bold;
+    background-color: #0042ff;
+    color: #ffffff;
+    
+    border: 1px solid black;  
+    border-radius: 20px;
+        
+    justify-self: right;
+}
