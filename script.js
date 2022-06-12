@@ -15,10 +15,6 @@ radius.min = 200;
 radius.max = 2000;
 radius.value = 1000;
 radius.step = 100;
-radius.addEventListener("change", ()=>{
-    document.getElementById("radiusLabel").textContent  = radius.value/1000 + " km";
-});
-
 radius.addEventListener("touchmove", ()=>{
     document.getElementById("radiusLabel").textContent  = radius.value/1000 + " km";
 });
@@ -40,7 +36,8 @@ vibration.addEventListener('pointerdown', ()=>{
         vibrate = true;
         vibration.style.color = "#26ff00";
         vibration.textContent = "ON";
-    }alert(vibrate);
+    }
+    alert(vibrate);
 });
 
 
